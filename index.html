@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="networkCanvas"></canvas>
+
+    <header>
+        <a href="#" class="logo">Yasmin<span>Pereira</span></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="lang-nav-inicio">Início</a></li>
+                <li><a href="#sobre" class="lang-nav-sobre">Sobre</a></li>
+                <li><a href="#projetos" class="lang-nav-projetos">Projetos</a></li>
+                <li><a href="#contato" class="lang-nav-contato">Contato</a></li>
+                
+                <!-- Menu de Idioma -->
+                <li class="dropdown">
+                    <button class="dropbtn">🌐 <span id="current-lang">PT</span></button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="mudarIdioma('pt')">Português (PT)</a>
+                        <a href="#" onclick="mudarIdioma('en')">English (EN)</a>
+                        <a href="#" onclick="mudarIdioma('es')">Español (ES)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO EM NEON -->
+        <section id="inicio" class="hero fade-in">
+            <p class="hero-saudacao lang-hero-saudacao">Olá, eu sou</p>
+            <h1 class="hero-nome-neon">Yasmin Pereira</h1>
+            <p class="hero-cargo lang-hero-desc">Estudante de Engenharia de Software & Apaixonada por Tecnologias.</p>
+            <a href="#sobre" class="btn lang-hero-btn">SAIBA MAIS</a>
+            
+            <!-- Redes Sociais -->
+            <div class="hero-redes">
+                <a href="https://linkedin.com/in/imyasminpereira" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yaspereira07" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/yasxhtag/" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="section center-wrapper fade-in">
+            <h2 class="section-title lang-sobre-title">Sobre Mim</h2>
+            
+            <!-- CARDS SOBRE MIM -->
+            <div class="sobre-cards">
+
+                <article class="card-pequeno">
+                    <div class="card-img-placeholder">
+                        <img src="images/foto1.png" alt="Foto Yasmin 1">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="lang-card1-title">Quem Sou</h3>
+                        <p class="lang-card1-desc">Sou uma estudante de Engenharia de Software, interessada em CiberSegurança, Desenvolvimento e inovação. Sou curiosa, proativa e estou sempre buscando aprimorar meus conhecimentos e experiências.</p>
+                    </div>
+                </article>
+
+                <article class="card-pequeno">
+                    <div class="card-img-placeholder">
+                        <img src="images/foto2.png" alt="Foto Yasmin 2">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="lang-card2-title">O Que Me Motiva</h3>
+                        <p class="lang-card2-desc">Gosto de desafios que me fazem pensar e aprender algo novo. Ver uma ideia ganhar forma e se transformar em algo funcional é uma das coisas que mais me motiva. Gosto de aprender novas tecnologias, enfrentar desafios e evoluir com eles.</p>
+                    </div>
+                </article>
+
+                <article class="card-pequeno">
+                    <div class="card-img-placeholder">
+                        <img src="images/foto3.png" alt="Foto Yasmin 3">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="lang-card3-title">Como Trabalho</h3>
+                        <p class="lang-card3-desc">Busco trabalhar de forma organizada, colaborativa e focada em resultados. Gosto de compreender cada desafio antes de ir para a prática, explorar diferentes soluções e aí sim aplicar meus conhecimentos de forma prática.</p>
+                    </div>
+                </article>
+                
+            </div>
+
+            <div class="marquee-container fade-in">
+                <div class="marquee-content">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Eclipse</span>
+                    <span class="skill-tag">IntelliJ</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Trello</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Eclipse</span>
+                    <span class="skill-tag">IntelliJ</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Trello</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section center-wrapper">
+            <h2 class="section-title fade-in lang-proj-title">Meus Projetos</h2>
+            
+            <!-- NEXUS -->
+            <article class="fade-in card-projeto">
+                <h3 class="lang-proj-nexus-title">NEXUS — Plataforma para Colaboração entre Desenvolvedores</h3>
+                <p class="lang-proj-nexus-desc">Plataforma Web3 focada em conectar desenvolvedores a projetos e colaboradores, utilizando a blockchain Solana para registrar colaborações.</p>
+                <div class="botoes-projeto">
+                    <button class="btn-outline lang-btn-saiba" onclick="abrirModal('modalNexus')">Saiba Mais</button>
+                    <a href="https://site-nexus.netlify.app" target="_blank" class="btn lang-btn-acessar">Acessar Projeto</a>
+                </div>
+            </article>
+
+            <!-- CONNECTTRUCK -->
+            <article class="fade-in card-projeto">
+                <h3 class="lang-proj-ct-title">CONNECTTRUCK — Plataforma de Transporte de Cargas</h3>
+                <p class="lang-proj-ct-desc">Plataforma para conectar clientes, motoristas e entregadores freelancers, facilitando a contratação e o gerenciamento de serviços de transporte.</p>
+                <div class="botoes-projeto">
+                    <button class="btn-outline lang-btn-saiba" onclick="abrirModal('modalConnecttruck')">Saiba Mais</button>
+                    <a href="https://github.com/LeAladdim/ConnecTruck" target="_blank" class="btn lang-btn-codigo">Ver Código</a>
+                </div>
+            </article>
+
+            <!-- EDUCOINS -->
+            <article class="fade-in card-projeto">
+                <h3 class="lang-proj-edu-title">EDUCOINS — Sistema de Gamificação Acadêmica</h3>
+                <p class="lang-proj-edu-desc">Proposta de sistema de gamificação voltado à rotina acadêmica utilizando a moeda virtual EduCoin para incentivar o engajamento dos estudantes.</p>
+                <div class="botoes-projeto">
+                    <button class="btn-outline lang-btn-saiba" onclick="abrirModal('modalEducoins')">Saiba Mais</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="contato" class="section center-wrapper fade-in">
+            <h2 class="section-title lang-contato-title">Vamos Conversar?</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <label for="nome" class="lang-form-nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                    <label for="mensagem" class="lang-form-msg">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?" required minlength="50"></textarea>
+                    
+                    <span id="msg-warning" class="warning-text"></span>
+
+                    <button type="submit" style="margin-top: 10px; width: 100%;" class="btn lang-form-btn">ENVIAR MENSAGEM</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="lista-redes">
+            <li><a href="https://linkedin.com/in/imyasminpereira" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/yaspereira07" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/yasxhtag/" target="_blank">Instagram</a></li>
+        </ul>
+        <p>© 2026 Desenvolvido com 💜 por Yasmin Pereira.</p>
+    </footer>
+
+    <!-- MODAL NEXUS -->
+    <div id="modalNexus" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalNexus')">&times;</span>
+            <h2 class="highlight">NEXUS</h2>
+            <br>
+            <p class="lang-mod-nexus-sub"><strong>Projeto acadêmico | Figma · Web3</strong></p>
+            <p class="lang-mod-nexus-desc">Desenvolvimento, em equipe, de uma proposta de plataforma para conectar desenvolvedores a projetos e colaboradores, buscando facilitar a formação de equipes e formalizar a participação de cada integrante. A solução utiliza a Solana como proposta para registrar termos de colaboração.</p>
+            <ul class="lang-mod-nexus-list">
+                <li>Criação das interfaces e protótipo no Figma.</li>
+                <li>Estruturação dos fluxos e funcionalidades da plataforma.</li>
+                <li>Desenvolvimento da proposta de produto e experiência do usuário.</li>
+                <li>Criação de um site demonstrativo para apresentação do projeto.</li>
+            </ul>
+            <p><strong>Conceitos:</strong> Web3 · Blockchain · Solana</p>
+            <p><strong>Ferramentas:</strong> Figma</p>
+            <br>
+            <a href="https://site-nexus.netlify.app" target="_blank" class="btn lang-btn-acessar">Acessar Projeto Ao Vivo</a>
+        </div>
+    </div>
+
+    <!-- MODAL CONNECTTRUCK -->
+    <div id="modalConnecttruck" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalConnecttruck')">&times;</span>
+            <h2 class="highlight">CONNECTTRUCK</h2>
+            <br>
+            <p class="lang-mod-ct-sub"><strong>Projeto acadêmico | Desenvolvimento Front-end</strong></p>
+            <p class="lang-mod-ct-desc">Desenvolvimento, em equipe, de uma plataforma para conectar clientes, motoristas e entregadores freelancers, facilitando a contratação e o gerenciamento de serviços de transporte de cargas.</p>
+            <ul class="lang-mod-ct-list">
+                <li>Desenvolvimento das interfaces utilizando HTML, CSS e JavaScript.</li>
+                <li>Criação e prototipação das interfaces no Figma.</li>
+                <li>Implementação do front-end da aplicação.</li>
+                <li>Participação no desenvolvimento colaborativo utilizando GitHub.</li>
+                <li>Aplicação da metodologia ágil Scrum durante o desenvolvimento.</li>
+            </ul>
+            <p><strong>Tecnologias:</strong> HTML · CSS · JavaScript</p>
+            <p><strong>Ferramentas:</strong> Figma · GitHub</p>
+            <br>
+            <a href="https://github.com/LeAladdim/ConnecTruck" target="_blank" class="btn lang-btn-codigo">Ver Código</a>
+        </div>
+    </div>
+
+    <!-- MODAL EDUCOINS -->
+    <div id="modalEducoins" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal('modalEducoins')">&times;</span>
+            <h2 class="highlight">EDUCOINS</h2>
+            <br>
+            <p class="lang-mod-edu-sub"><strong>Projeto acadêmico | Figma</strong></p>
+            <p class="lang-mod-edu-desc">Desenvolvimento, em equipe, de uma proposta de sistema de gamificação voltado à rotina acadêmica. O projeto utiliza uma moeda virtual, EduCoin, para incentivar participação, desempenho e envolvimento dos estudantes por meio de recompensas.</p>
+            <ul class="lang-mod-edu-list">
+                <li>Criação das interfaces e protótipo no Figma.</li>
+                <li>Desenvolvimento da proposta de experiência e fluxo de navegação.</li>
+                <li>Elaboração de relatórios e documentação do projeto.</li>
+                <li>Definição das funcionalidades e regras da solução.</li>
+            </ul>
+            <p><strong>Ferramentas:</strong> Figma</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
