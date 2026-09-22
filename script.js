@@ -9,6 +9,12 @@ const traducoes = {
         card1Title: "Quem Sou", card1Desc: "Sou uma estudante de Engenharia de Software, interessada em CiberSegurança, Desenvolvimento e inovação. Sou curiosa, proativa e estou sempre buscando aprimorar meus conhecimentos e experiências.",
         card2Title: "O Que Me Motiva", card2Desc: "Gosto de desafios que me fazem pensar e aprender algo novo. Ver uma ideia ganhar forma e se transformar em algo funcional é uma das coisas que mais me motiva. Gosto de aprender novas tecnologias, enfrentar desafios e evoluir com eles.",
         card3Title: "Como Trabalho", card3Desc: "Busco trabalhar de forma organizada, colaborativa e focada em resultados. Gosto de compreender cada desafio antes de ir para a prática, explorar diferentes soluções e aí sim aplicar meus conhecimentos de forma prática.",
+        navHabilidades: "Habilidades",
+        habTitle: "Habilidades",
+        habHardTitle: "Hard Skills",
+        habSoftTitle: "Soft Skills",
+        hard1: "Gestão de Equipes", hard2: "Fluência em Inglês", hard3: "Metodologias Ágeis", hard4: "Excel Avançado", hard5: "Análise de Dados",
+        soft1: "Trabalho em Equipe", soft2: "Comunicação Efetiva", soft3: "Resolução de Problemas", soft4: "Pensamento Crítico", soft5: "Proatividade", soft6: "Adaptabilidade", soft7: "Liderança", soft8: "Flexibilidade",
         projTitle: "Meus Projetos", 
         btnSaiba: "Saiba Mais", 
         btnAcessar: "Acessar Projeto",
@@ -43,6 +49,12 @@ const traducoes = {
         card1Title: "Who I Am", card1Desc: "I am a Software Engineering student, interested in Cybersecurity, Development, and innovation. I am curious, proactive, and always looking to improve my knowledge and experiences.",
         card2Title: "What Motivates Me", card2Desc: "I like challenges that make me think and learn something new. Seeing an idea take shape and turn into something functional is one of the things that motivates me the most. I enjoy learning new technologies, facing challenges, and evolving with them.",
         card3Title: "How I Work", card3Desc: "I seek to work in an organized, collaborative, and results-focused way. I like to understand each challenge before moving to practice, explore different solutions, and only then apply my knowledge practically.",
+        navHabilidades: "Skills",
+        habTitle: "Skills",
+        habHardTitle: "Hard Skills",
+        habSoftTitle: "Soft Skills",
+        hard1: "Team Management", hard2: "Fluent English", hard3: "Agile Methodologies", hard4: "Advanced Excel", hard5: "Data Analysis",
+        soft1: "Teamwork", soft2: "Effective Communication", soft3: "Problem Solving", soft4: "Critical Thinking", soft5: "Proactivity", soft6: "Adaptability", soft7: "Leadership", soft8: "Flexibility",
         projTitle: "My Projects", 
         btnSaiba: "Learn More", 
         btnAcessar: "View Project",
@@ -77,6 +89,12 @@ const traducoes = {
         card1Title: "Quién Soy", card1Desc: "Soy estudiante de Ingeniería de Software, interesada en Ciberseguridad, Desarrollo e innovación. Soy curiosa, proactiva y siempre busco mejorar mis conocimientos y experiencias.",
         card2Title: "Lo Que Me Motiva", card2Desc: "Me gustan los desafíos que me hacen pensar y aprender algo nuevo. Ver una idea tomar forma y convertirse en algo funcional es una de las cosas que más me motiva. Me gusta aprender nuevas tecnologías, enfrentar desafíos y evolucionar con ellos.",
         card3Title: "Cómo Trabajo", card3Desc: "Busco trabajar de manera organizada, colaborativa y enfocada en resultados. Me gusta comprender cada desafío antes de pasar a la práctica, explorar diferentes soluciones y solo entonces aplicar mis conocimientos de manera práctica.",
+        navHabilidades: "Habilidades",
+       habTitle: "Habilidades",
+        habHardTitle: "Hard Skills",
+        habSoftTitle: "Soft Skills",
+        hard1: "Gestión de Equipos", hard2: "Inglés Fluido", hard3: "Metodologías Ágiles", hard4: "Excel Avanzado", hard5: "Análisis de Datos",
+        soft1: "Trabajo en Equipo", soft2: "Comunicación Efectiva", soft3: "Resolución de Problemas", soft4: "Pensamiento Crítico", soft5: "Proactividad", soft6: "Adaptabilidad", soft7: "Liderazgo", soft8: "Flexibilidad",
         projTitle: "Mis Proyectos", 
         btnSaiba: "Saber Más", 
         btnAcessar: "Ver Proyecto",
@@ -125,6 +143,25 @@ function mudarIdioma(lang) {
     document.querySelector('.lang-card2-desc').innerText = t.card2Desc;
     document.querySelector('.lang-card3-title').innerText = t.card3Title;
     document.querySelector('.lang-card3-desc').innerText = t.card3Desc;
+
+   // Habilidades
+    document.querySelector('.lang-nav-habilidades').innerText = t.navHabilidades;
+    document.querySelector('.lang-hab-title').innerText = t.habTitle;
+    document.querySelector('.lang-hab-hard-title').innerText = t.habHardTitle;
+    document.querySelector('.lang-hab-soft-title').innerText = t.habSoftTitle;
+    document.querySelector('.lang-hard1').innerText = t.hard1;
+    document.querySelector('.lang-hard2').innerText = t.hard2;
+    document.querySelector('.lang-hard3').innerText = t.hard3;
+    document.querySelector('.lang-hard4').innerText = t.hard4;
+    document.querySelector('.lang-hard5').innerText = t.hard5;
+    document.querySelector('.lang-soft1').innerText = t.soft1;
+    document.querySelector('.lang-soft2').innerText = t.soft2;
+    document.querySelector('.lang-soft3').innerText = t.soft3;
+    document.querySelector('.lang-soft4').innerText = t.soft4;
+    document.querySelector('.lang-soft5').innerText = t.soft5;
+    document.querySelector('.lang-soft6').innerText = t.soft6;
+    document.querySelector('.lang-soft7').innerText = t.soft7;
+    document.querySelector('.lang-soft8').innerText = t.soft8;
     
     // Cards do Projetos
     document.querySelector('.lang-proj-title').innerText = t.projTitle;

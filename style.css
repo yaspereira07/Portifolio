@@ -135,6 +135,14 @@ nav a:hover { color: var(--primary); text-shadow: 0 0 10px var(--primary-glow); 
 
 @keyframes scrollMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
+.habilidades-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; width: 100%; margin-top: 2rem; }
+.card-habilidade { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; }
+.card-habilidade:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15); }
+.card-habilidade h3 { font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-main); font-family: 'Orbitron', sans-serif;}
+.card-tags-habilidade { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.card-tags-habilidade span { background-color: var(--tag-bg); border: 1px solid var(--border-color); color: var(--text-muted); padding: 8px 16px; border-radius: 30px; font-family: 'Fira Code', monospace; font-size: 0.9rem; transition: all 0.3s ease; }
+.card-tags-habilidade span:hover { border-color: var(--primary); color: #fff; box-shadow: 0 0 10px rgba(168, 85, 247, 0.3); }
+
 .card-projeto { background: var(--bg-card); backdrop-filter: blur(8px); border: 1px solid var(--border-color); padding: 3rem; border-radius: 12px; margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; width: 100%; transition: transform 0.3s ease, border-color 0.3s ease; }
 .card-projeto:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15); }
 .card-projeto h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
