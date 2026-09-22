@@ -264,3 +264,19 @@ window.addEventListener('click', function(event) {
         event.target.style.display = 'none'; document.body.style.overflow = 'auto';
     }
 });
+
+// menu no mobile
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('is-active');
+    navMenu.classList.toggle('active');
+});
+
+document.querySelectorAll('#nav-menu ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-active');
+        navMenu.classList.remove('active');
+    });
+});
