@@ -36,7 +36,7 @@ const traducoes = {
     },
     en: {
         navInicio: "Home", navSobre: "About", navProjetos: "Projects", navContato: "Contact",
-        heroSaudacao: "Hello, I am", 
+        heroSaudacao: "Hello, I'm", 
         heroDesc: "Software Engineering Student & Technology Enthusiast.",
         heroBtn: "LEARN MORE",
         sobreTitle: "About Me",
